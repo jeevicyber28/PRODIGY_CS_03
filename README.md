@@ -1,62 +1,90 @@
 # 🔐 Password Complexity Checker
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Language-Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/Domain-Cybersecurity-00C853?style=for-the-badge&logo=hackthebox&logoColor=white" />
-  <img src="https://img.shields.io/badge/Type-Security%20Tool-FF6F00?style=for-the-badge" />
-  <img src="https://img.shields.io/badge/Interface-CLI-212121?style=for-the-badge&logo=windows-terminal&logoColor=white" />
+  <img src="https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white">
+  <img src="https://img.shields.io/badge/Cybersecurity-Password%20Security-00C853?style=for-the-badge">
+  <img src="https://img.shields.io/badge/CLI-Application-212121?style=for-the-badge&logo=windows-terminal&logoColor=white">
 </p>
 
 <p align="center">
-  <b>A simple Python-based tool for evaluating password complexity and providing security recommendations.</b>
+  <b>A simple Python-based tool to evaluate password complexity and provide improvement suggestions.</b>
 </p>
 
 ---
 
-## 📌 About The Project
+## 📌 Project Overview
 
-**Password Complexity Checker** is a Python-based cybersecurity utility designed to evaluate the strength of a password using a set of commonly used complexity requirements.
+The **Password Complexity Checker** is a Python-based cybersecurity project designed to evaluate the strength of a password using a set of basic complexity requirements.
 
-The application accepts a password from the user and checks whether it satisfies five important conditions:
+The program accepts a password from the user and checks whether it contains:
 
-- Minimum password length
-- Presence of uppercase letters
-- Presence of lowercase letters
-- Presence of numbers
-- Presence of special characters
+- At least 8 characters
+- At least one uppercase letter
+- At least one lowercase letter
+- At least one number
+- At least one special character
 
-Each satisfied requirement contributes to the password's overall strength score.
+Each successful requirement increases the password strength score by `1`.
 
-The program then classifies the password as:
+The maximum possible score is `5`.
 
-- 🟢 **Strong**
-- 🟡 **Moderate**
-- 🔴 **Weak**
+Based on the final score, the password is classified as:
 
-If one or more requirements are missing, the application also provides specific suggestions to help improve the password.
+| Score | Password Strength |
+|:---:|---|
+| `0 - 2` | 🔴 Weak |
+| `3 - 4` | 🟡 Moderate |
+| `5` | 🟢 Strong |
+
+If a requirement is not satisfied, the program also provides suggestions to improve the password.
 
 ---
 
-## 🎯 Project Objectives
+## 🎯 Objectives
 
 The main objectives of this project are:
 
-- Understand the fundamentals of password security
-- Implement password complexity validation using Python
-- Practice regular expressions
-- Work with functions and conditional statements
-- Implement a simple scoring mechanism
-- Provide meaningful feedback to users
-- Understand how password policies can be implemented programmatically
-- Build a small cybersecurity-focused command-line application
+- To understand password complexity requirements
+- To implement password validation using Python
+- To use regular expressions for character checking
+- To calculate password strength using a scoring system
+- To provide useful feedback to the user
+- To practice Python functions and conditional statements
+- To understand a basic cybersecurity password-security concept
 
 ---
 
-# 🚀 Key Features
+## ✨ Features
 
-### 🔐 Password Length Validation
+- 🔐 Password complexity checking
+- 📏 Minimum length validation
+- 🔠 Uppercase letter detection
+- 🔡 Lowercase letter detection
+- 🔢 Number detection
+- 🔣 Special character detection
+- 📊 Strength score calculation
+- 💡 Suggestions for missing requirements
+- 💻 Command-line interface
+- 🐍 Python implementation
+- 🔎 Regular-expression-based validation
 
-Checks whether the password contains at least **8 characters**.
+---
+
+## 🛠️ Technologies Used
+
+| Technology | Purpose |
+|---|---|
+| Python | Main programming language |
+| `re` module | Regular expression based validation |
+| CLI | User interaction |
+
+---
+
+## 📂 Project Structure
 
 ```text
-Minimum requirement: 8 characters
+PRODIGY_CS_03/
+│
+├── password_checker.py
+│
+└── README.md
